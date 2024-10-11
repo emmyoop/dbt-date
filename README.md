@@ -858,7 +858,12 @@ pip install -r dev-requirements.txt
 pip install dbt-postgres
 ```
 
-3. Run tox command
+3. Set postgres env vars
+```
+. ./integration_tests/.env/postgres.env
+```
+
+4. Run tox command
 ```
 tox -e dbt_integration_postgres
 ```
